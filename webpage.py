@@ -7,10 +7,10 @@ def main():
     
     logo,title = st.columns([1,20])
     #title
-    logo.image(Image.open(r"C:\Users\fedem\Desktop\ML_Barbon_project\photo\logo.png"), use_column_width='auto')
+    logo.image(Image.open(r"fedemonti00\NBA_Game_predictor\photo\logo.png"), use_column_width='auto')
     title.markdown('<h1 align="center">NBA Game Predictor 2010’s</h1>',unsafe_allow_html = True)
     #read the dataframe cointaining name players
-    top30 = pd.read_csv(r"C:\Users\fedem\Desktop\ML_Barbon_project\lista_giocatori_front_end.csv")
+    top30 = pd.read_csv(r"fedemonti00\NBA_Game_predictor\dataset\lista_giocatori_front_end.csv")
     
     phc0 = st.empty()
     phc1 = st.empty()
