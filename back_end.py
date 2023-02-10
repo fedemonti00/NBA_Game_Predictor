@@ -1,11 +1,10 @@
-import dataset
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor
 import string
 
 #Estraggo le informazioni che serviranno nella deserializzazione dei risultati
-d = pd.read_csv("Test_numeric.csv")
+d = pd.read_csv(r"./dataset/Test_numeric.csv")
 d_min = d.PTS.min()
 d_max = d.PTS.max()
 
@@ -27,7 +26,7 @@ def predict_score(t1_player,t2_player):
         players[i+5] = t2_player[i]
 
     for i in range(10): #estrazione dei dataset
-        dataset[i] = pd.read_csv('Dataset' + players[i].translate({ord(c): None for c in string.whitespace}) + '.csv')
+        dataset[i] = pd.read_csv(r'./dataset/Dataset' + players[i].translate({ord(c): None for c in string.whitespace}) + '.csv')
     
     for j in range(5):  #merging dei vari dataset
         for i in range(5):
