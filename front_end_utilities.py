@@ -4,7 +4,7 @@ from PIL import Image
 import time
 import back_end as be
 
-top30 = pd.read_csv(r"C:\Users\fedem\Desktop\ML_Barbon_project\lista_giocatori_front_end.csv") #lista in cui sono messi i giocatori
+top30 = pd.read_csv(r"fedemonti00\NBA_Game_predictor\dataset\lista_giocatori_front_end.csv") #lista in cui sono messi i giocatori
 
 def select_photo(player): #switch che seleziona le immagini dei giocatori
     if(player == top30.loc[1,"NAME_PLAYER"]):
