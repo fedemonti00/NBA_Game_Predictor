@@ -4,7 +4,7 @@ from sklearn.neighbors import KNeighborsRegressor
 import string
 
 #Estraggo le informazioni che serviranno nella deserializzazione dei risultati
-d = pd.read_csv("fedemonti00/nba_game_predictor/main/datase/Test_numeric.csv")
+d = pd.read_csv("fedemonti00/nba_game_predictor/main/dataset/Test_numeric.csv")
 d_min = d.PTS.min()
 d_max = d.PTS.max()
 
