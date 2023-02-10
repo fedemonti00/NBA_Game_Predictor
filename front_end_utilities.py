@@ -73,7 +73,7 @@ def trans_to_result():  #funzione che abbellisce la transizione
     my_bar = st.empty()
     my_bar.progress(0)
     for progress_range in range(100):
-        time.sleep(0.001)
+        time.sleep(0.01)
         my_bar.progress(progress_range + 1)
     st.balloons()
     my_bar.empty()
