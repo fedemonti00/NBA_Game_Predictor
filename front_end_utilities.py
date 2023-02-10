@@ -10,15 +10,15 @@ def select_photo(player): #switch che seleziona le immagini dei giocatori
     if(player == top30.loc[1,"NAME_PLAYER"]):
         return Image.open(r"fedemonti00\NBA_Game_predictor\photo\LBJ_photo.png")
     if(player == top30.loc[2,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\SC_photo.png")
+        return Image.open("\photo\SC_photo.png")
     if(player == top30.loc[3,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\KD_photo.png")
+        return Image.open("\photo\KD_photo.png")
     if(player == top30.loc[4,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\KL_photo.png")
+        return Image.open("\KL_photo.png")
     if(player == top30.loc[5,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\GA_photo.png")
+        return Image.open(r"\photo\GA_photo.png")
     if(player == top30.loc[6,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\KB_photo.png")
+        return Image.open(r"\photo\KB_photo.png")
     if(player == top30.loc[7,"NAME_PLAYER"]):
         return Image.open(r"fedemonti00\NBA_Game_predictor\DW_photo.png")
     if(player == top30.loc[8,"NAME_PLAYER"]):
