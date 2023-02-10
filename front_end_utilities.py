@@ -4,70 +4,70 @@ from PIL import Image
 import time
 import back_end as be
 
-top30 = pd.read_csv(r"fedemonti00\NBA_Game_predictor\dataset\lista_giocatori_front_end.csv") #lista in cui sono messi i giocatori
+top30 = pd.read_csv(r"./dataset/lista_giocatori_front_end.csv") #lista in cui sono messi i giocatori
 
 def select_photo(player): #switch che seleziona le immagini dei giocatori
     if(player == top30.loc[1,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\LBJ_photo.png")
+        return Image.open(r"./photo/LBJ_photo.png")
     if(player == top30.loc[2,"NAME_PLAYER"]):
-        return Image.open("\photo\SC_photo.png")
+        return Image.open(r"./photo/SC_photo.png")
     if(player == top30.loc[3,"NAME_PLAYER"]):
-        return Image.open("\photo\KD_photo.png")
+        return Image.open(r"./photo/KD_photo.png")
     if(player == top30.loc[4,"NAME_PLAYER"]):
-        return Image.open("\KL_photo.png")
+        return Image.open(r"./photo/KL_photo.png")
     if(player == top30.loc[5,"NAME_PLAYER"]):
-        return Image.open(r"\photo\GA_photo.png")
+        return Image.open(r"./photo/GA_photo.png")
     if(player == top30.loc[6,"NAME_PLAYER"]):
-        return Image.open(r"\photo\KB_photo.png")
+        return Image.open(r"./photo/KB_photo.png")
     if(player == top30.loc[7,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\DW_photo.png")
+        return Image.open(r"./photo/DW_photo.png")
     if(player == top30.loc[8,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\DN_photo.png")
+        return Image.open(r"./photo/DN_photo.png")
     if(player == top30.loc[9,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\JH_photo.png")
+        return Image.open(r"./photo/JH_photo.png")
     if(player == top30.loc[10,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\TD_photo.png")
+        return Image.open(r"./photo/TD_photo.png")
     if(player == top30.loc[11,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\CP_photo.png")
+        return Image.open(r"./photo/CP_photo.png")
     if(player == top30.loc[12,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\RW_photo.png")
+        return Image.open(r"./photo/RW_photo.png")
     if(player == top30.loc[13,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\DM_photo.png")
+        return Image.open(r"./photo/DM_photo.png")
     if(player == top30.loc[14,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\KI_photo.png")
+        return Image.open(r"./photo/KI_photo.png")
     if(player == top30.loc[15,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\AD_photo.png")
+        return Image.open(r"./photo/AD_photo.png")
     if(player == top30.loc[16,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\PG_photo.png")
+        return Image.open(r"./photo/PG_photo.png")
     if(player == top30.loc[17,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\JM_photo.png")
+        return Image.open(r"./photo/JM_photo.png")
     if(player == top30.loc[18,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\KT_photo.png")
+        return Image.open(r"./photo/KT_photo.png")
     if(player == top30.loc[19,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\DH_photo.png")
+        return Image.open(r"./photo/DH_photo.png")
     if(player == top30.loc[20,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\PAG_photo.png")
+        return Image.open(r"./photo/PAG_photo.png")
     if(player == top30.loc[21,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\DR_photo.png")
+        return Image.open(r"./photo/DR_photo.png")
     if(player == top30.loc[22,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\CA_photo.png")
+        return Image.open(r"./photo/CA_photo.png")
     if(player == top30.loc[23,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\LA_photo.png")
+        return Image.open(r"./photo/LA_photo.png")
     if(player == top30.loc[24,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\KLO_photo.png")
+        return Image.open(r"./photo/KLO_photo.png")
     if(player == top30.loc[25,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\DG_photo.png")
+        return Image.open(r"./photo/DG_photo.png")
     if(player == top30.loc[26,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\TP_photo.png")
+        return Image.open(r"./photo/TP_photo.png")
     if(player == top30.loc[27,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\AI_photo.png")
+        return Image.open(r"./photo/AI_photo.png")
     if(player == top30.loc[28,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\MG_photo.png")
+        return Image.open(r"./photo/MG_photo.png")
     if(player == top30.loc[29,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\KLOW_photo.png")
+        return Image.open(r"./photo/KLOW_photo.png")
     if(player == top30.loc[30,"NAME_PLAYER"]):
-        return Image.open(r"fedemonti00\NBA_Game_predictor\photo\MAG_photo.png")
-    return Image.open(r"fedemonti00\NBA_Game_predictor\photo\white.png")
+        return Image.open(r"./photo/MAG_photo.png")
+    return Image.open(r"./photo/white.png")
 
 def trans_to_result():  #funzione che abbellisce la transizione
     my_bar = st.empty()
@@ -92,7 +92,7 @@ def who_win(res):  #funzione che ha il compito di mostrare il vincitore
         st.info('Non può succedere, ma è successo. Hai fortuna o sfortuna, dipende dai punti di vista....')
     else:
         if(sum(t1) > sum(t2)): 
-           png1_res.image(Image.open(r"fedemonti00\NBA_Game_predictor\photo\win.png")) 
+           png1_res.image(Image.open(r"./photo/win.png")) 
            team1_res.write('**WINNER**')
            pts1_res.write(' ')
            pts1_res.write(' ')
@@ -104,7 +104,7 @@ def who_win(res):  #funzione che ha il compito di mostrare il vincitore
                         </style>
                         <p class="a">{sum(t1)}</p>
                         """, unsafe_allow_html = True)
-           png2_res.image(Image.open(r"fedemonti00\NBA_Game_predictor\photo\lose.png"))             
+           png2_res.image(Image.open(r"./photo/lose.png"))             
            team2_res.write('**LOSER**')
            pts2_res.write(' ')
            pts2_res.write(' ')
@@ -117,7 +117,7 @@ def who_win(res):  #funzione che ha il compito di mostrare il vincitore
                         <p class="a">{sum(t2)}</p>
                         """, unsafe_allow_html = True)
         else:
-            png2_res.image(Image.open(r"fedemonti00\NBA_Game_predictor\photo\win.png")) 
+            png2_res.image(Image.open(r"./photo/win.png")) 
             team2_res.write('**WINNER**')
             pts2_res.write(' ')
             pts2_res.write(' ')
@@ -129,7 +129,7 @@ def who_win(res):  #funzione che ha il compito di mostrare il vincitore
                          </style>
                          <p class="a">{sum(t2)}</p>
                          """, unsafe_allow_html = True)
-            png1_res.image(Image.open(r"fedemonti00\NBA_Game_predictor\photo\lose.png"))             
+            png1_res.image(Image.open(r"./photo/lose.png"))             
             team1_res.write('**LOSER**')
             pts1_res.write(' ')
             pts1_res.write(' ')
